@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUGAS DATABASE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- bagian header template -->
+	<header>
+		<h1 class="judul"><marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()" width="30%" scrollamount="3">Perbedaan DDL dan DML</marquee></h1>
+	</header>
+	<!-- akhir bagian header template -->
+	
+	<div class="wrap">
+		<!-- bagian menu		 -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="#DDL">DDL</a>
+				</li>
+				<li>
+					<a href="#DML">DML</a>
+				</li>
+				<li>
+					<a href="#About">ABOUT</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- akhir bagian menu -->
+
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+		<div class="widget">
+		<h3>Contact Information</h3>
+			<p><span class="glyphicon glyphicon-envelope" style="font-size:18px;"><a href="https://mail.google.com">hidayathada@gmail.com</a></span><br/>
+        </p>
+		</div>
+		</aside>
+		<!-- akhir bagian sidebar website -->
+
+		<!-- bagian konten Blog -->
+<div class="blog">
+<div id ="DDL" class="conteudo">
+	<h1> DDL </h1>
+		<hr>
+		<p  class="text-content"><font size="4"><strong>DDL atau Data Definition Language</strong> adalah kumpulan perintah SQL yang dapat digunakan untuk membuat dan mengubah struktur dan definisi tipe data dari objek-objek database seperti tabel, index, trigger, view, dan lain-lain.</font></p>
+<p>Contoh perintah DDL :</p>
+<ul>
+<font size="3"><b>1. CREATE</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk membuat, termasuk diantaranya membuat database baru, tabel baru, view baru, dan kolom.<br><br> Syntaxnya sebagai berikut :</div><br>
+	<font color="red"> CREATE TABLE Jurnal (Judul <i>VARCHAR</i> (25), Penulis <i>VARCHAR</i> (25), Artikel <i>TEXT</i> (200), PRIMARY KEY (<i>Judul</i>));</font><br><br>
+</ul>
+<ul>
+<font size="3"><b>2. ALTER</b></font><br>
+	<div class="text-content">Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom. Syntax umumnya sebagai berikut;</div>
+	<br><br><ul>
+	<p>a. Untuk Menambahkan Kolom :<br>
+	<font color="red">ALTER TABLE table_name ADD column_name datatype;<br></font><br>
+	</ul>
+	<ul>
+	<p>b. Untuk Menghapus Kolom :<br>
+	<font color="red"> ALTER TABLE table_name DROP column_name datatype;<br></font>
+	</ul>
+</ul>
+<br><ul>
+<font size="3"><b>3. RENAME</b></font><br>
+    Perintah yang digunakan untuk merubah nama Objek.<br><br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">RENAME TABLE <i>table_name</i> TO </i>new_table name;</i></font>
+</ul>
+<br><ul>
+<font size="3"><b>4.DROP</b></font><br>
+	Perintah ini digunakan untuk menghapus database dan tabel.<br> <br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">DROP TABLE <i>nama_tabel</i>;</font>
+</ul>				
+</div>		
+	<div id="DML" class="conteudo">
+		<h1>DML</h1>
+			<hr>
+			<p class="text-content"><font size="4"><strong>DML atau Data Manipulation Language</strong> adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan mengolah data di dalam table.</font></p>
+
+<p>Contoh perintah DML :</p>
+<ul>
+	<font size="3"><b>1. INSERT</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.</div><br><br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">INSERT INTO nama_tabel (field ke-1,field ke-2, field ke-n)<br>
+	VALUES (nilai_field_ke-1, nilai_field_ke-2, nilai_field_ke-n);</font><br><br>
+</ul>
+<ul>
+	<font size="3"><b>2. UPDATE</b></font><br>
+	<div class="text-content">Perintah ini digunakan untuk memperbaharui data lama menjadi data terkini. Jika anda memiliki data yang salah atau kurang update dengan kondisi sekarang, maka dapat diubah isi datanya dengan menggunakan perintah UPDATE.</div><br><br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">UPDATE nama_tabel
+	SET nama_field = data_baru<br>
+	WHERE nama_field = data_lama;</font><br><br>
+</ul>
+<ul>
+<p><font size="3"><b>3. DELETE</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus adalah data yang tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagi.<br><br>
+	Syntaxnya Sebagai Berikut:</div><br>
+	<font color="red">DELETE FROM nama_tabel<br>
+	[ WHERE kondisi];</font><br><br>
+</ul>
+<ul>
+<font size="3"><b>4. SELECT</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.</div><br><br>
+	Syntaxnya Sebagai Berikut: :<br>
+		<font color="red">SELECT [DISTINCT] select_list<br>
+		FROM table_source<br>
+		[WHERE search_condition]<br>
+		[GROUP BY group_by_expression]<br>
+		[HAVING search_condition]<br>
+		[ORDER BY order_expression [ASC | DESC] ]
+</font>
+	</div>
+
+	<div id ="About" class="conteudo">
+		<h1> About </h1>
+		<hr>
+			<p><font size="5">Nama : Hada Hidayat<br>
+			NIM   : L200170100<br>
+			Kelas : B </font></p>	
+	</div>
+	
+</div>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
