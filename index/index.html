@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <!-- BASICS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Tugas Database</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- skin -->
+  <link rel="stylesheet" href="skin/default.css">
+</head>
+
+<body>
+  <section id="header" class="appear"></section>
+  <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+        <h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">
+					</a></h1>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+          <li><a href="#home" class="page-scroll">Home</a></li>
+          <li><a href="#section-DDL">DDL</a></li>
+          <li><a href="#section-DML">DML</a></li>
+          <li><a href="#section-contact">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.navbar-collapse -->
+    </div>
+  </div>
+
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <br><h1><strong>selamat datang</strong></h1>
+	<br><p>Hada Hidayat / L200170100</p>
+</header>
+
+  <!-- services -->
+
+  <!-- spacer section:testimonial -->
+  <section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="align-center">
+            <div class="testimonial pad-top40 pad-bot40 clearfix">
+              <br>
+			  <br>
+			  <br>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="section-DDL" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">DDL</h2>
+          </div>
+        </div>
+      </div>
+
+      <p><font size="4"><div class="text-content2"><strong>DDL atau Data Definition Language</strong> adalah kumpulan perintah SQL yang dapat digunakan untuk membuat dan mengubah struktur dan definisi tipe data dari objek-objek database seperti tabel, index, trigger, view, dan lain-lain. DDL dapat di gunakan untuk mengoperasikan suatu skema struktur pada sebuah database, perintah utama yang dapat di gunakan pada DDL (Data Definition Language) adalah seperti CREATE, ALTER, DROP</div></font></p>
+<p>Contoh perintah DDL :</p>
+<ul>
+<font size="3"><b>1. CREATE</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk membuat, termasuk diantaranya membuat database baru, tabel baru, view baru, dan kolom.<br><br> Syntaxnya sebagai berikut :</div>
+	<font color="red"> CREATE TABLE Jurnal (Judul <i>VARCHAR</i> (25), Penulis <i>VARCHAR</i> (25), Artikel <i>TEXT</i> (200), PRIMARY KEY (<i>Judul</i>));</font><br><br>
+</ul>
+<ul>
+<font size="3"><b>2. ALTER</b></font><br>
+	<div class="text-content">Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom. Syntax umumnya sebagai berikut;</div>
+	<br><ul>
+	<p>a. Untuk Menambahkan Kolom :<br>
+	<font color="red">ALTER TABLE table_name ADD column_name datatype;<br></font><br>
+	</ul>
+	<ul>
+	<p>b. Untuk Menghapus Kolom :<br>
+	<font color="red"> ALTER TABLE table_name DROP column_name datatype;<br></font>
+	</ul>
+</ul>
+<br><ul>
+<font size="3"><b>3. RENAME</b></font><br>
+    <div class="text-content">Perintah yang digunakan untuk merubah nama Objek.<br><br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">RENAME TABLE <i>table_name</i> TO </i>new_table name;</i></font>
+</ul>
+<br><ul>
+<font size="3"><b>4.DROP</b></font><br>
+	<div class="text-content">Perintah ini digunakan untuk melakukan penghapusan tabel dalam database. Apabila perintah DROP ini dijalankan maka, Semua data dan struktur dari table akan dihapus, Semua transaksi pending akan di-commit,dan Semua indeks akan dihapus. Apabila sudah terlanjur melakukan perintah DROP, perintah ini tidak bisa di-rollback<br><br>
+	Syntaxnya sebagai berikut:</div>
+	<font color="red">DROP TABLE <i>nama_tabel</i>;</font>
+</ul>
+
+    </div>
+  </section>
+  <!-- /about -->
+
+  <!-- spacer section:stats -->
+  <section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="align-center pad-top40 pad-bot40">
+        <br><br><br><br>
+      </div>
+    </div>
+  </section>
+
+  <!-- section works -->
+  <section id="section-DML" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">DML</h2>
+          </div>
+        </div>
+      </div>
+
+      <p><font size="4"><div class="text-content2"><strong>DML atau Data Manipulation Language</strong> adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan mengolah data di dalam table. DML adalah sekumpulan perintah yang di gunakan untuk melakukan pengelolaan database seperti membuat baru, menambah, menghapus dan menampilkan, perintah utamanya adalah seperti UPDATE, DELETE, INSERT, SELECT.</div></font></p>
+
+<p>Contoh perintah DML :</p>
+<ul>
+	<font size="3"><b>1. INSERT</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.</div><br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">INSERT INTO nama_tabel (field ke-1,field ke-2, field ke-n)<br>
+	VALUES (nilai_field_ke-1, nilai_field_ke-2, nilai_field_ke-n);</font><br><br>
+</ul>
+<ul>
+	<font size="3"><b>2. UPDATE</b></font><br>
+	<div class="text-content">Perintah ini digunakan untuk memperbaharui data lama menjadi data terkini. Jika anda memiliki data yang salah atau kurang update dengan kondisi sekarang, maka dapat diubah isi datanya dengan menggunakan perintah UPDATE.</div><br>
+	Syntaxnya sebagai berikut:<br>
+	<font color="red">UPDATE nama_tabel
+	SET nama_field = data_baru<br>
+	WHERE nama_field = data_lama;</font><br><br>
+</ul>
+<ul>
+<p><font size="3"><b>3. DELETE</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus adalah data yang tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagi.<br><br>
+	Syntaxnya Sebagai Berikut:</div>
+	<font color="red">DELETE FROM nama_tabel<br>
+	[ WHERE kondisi];</font><br><br>
+</ul>
+<ul>
+<font size="3"><b>4. SELECT</b></font><br>
+    <div class="text-content">Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.</div><br>
+	Syntaxnya Sebagai Berikut: :<br>
+		<font color="red">SELECT [DISTINCT] select_list<br>
+		FROM table_source<br>
+		[WHERE search_condition]<br>
+		[GROUP BY group_by_expression]<br>
+		[HAVING search_condition]<br>
+		[ORDER BY order_expression [ASC | DESC] ]
+</font>
+	</div>
+
+    </div>
+  </section>
+  <section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">
+    <div class="align-center pad-top40 pad-bot40">
+    </div>
+  </section>
+
+  <!-- contact -->
+<section id="section-contact" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Contact Us</h2>
+          </div>
+        </div>
+      </div>
+	 </div>
+    <div class="container">
+      <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+        <div class="col-sm-12 align-center">
+		
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4"> <i class="fa fa-instagram"></i>
+        <p>Hadaaa__</p>
+      </div>
+      <div class="col-md-4"><i class="fa fa-envelope-o"></i>
+        <p>hidayathada@gmail.com</p>
+      </div>
+      <div class="col-md-4"> <i class="fa fa-facebook"></i>
+        <p>Hada Hidayat</p>
+      </div>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+        </div>
+      </div>
+	</div>
+    </div>
+  </section>
+  
+  <section id="footer" class="section footer">
+    <div class="container">
+      <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+        <div class="col-sm-12 align-center">
+          <ul class="social-network social-circle">
+            <li><a href="http://instagram.com" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://mail.gmail.com" class="icoEnvelope" title="Envelope"><i class="fa fa-envelope-o"></i></a></li>
+			<li><a href="http://facebook.com" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row align-center copyright">
+        <div class="col-sm-12">
+          <p>Hada Hidayat / L200170100</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Amoeba
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.localScroll.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/main.js"></script>
+  <script src="contactform/contactform.js"></script>
+</body>
+
+</html>
