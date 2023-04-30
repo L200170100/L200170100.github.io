@@ -1,2 +1,5 @@
-Welcome
-<a href="hada">Ini Hada</a>
+<html>
+  <body>
+    <a href="hada">Ini Hada</a>
+  </body>
+</html>
